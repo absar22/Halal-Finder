@@ -2,7 +2,7 @@
 
 Quick tool to check if products are halal by scanning barcodes or searching product names.
 
-![<img width="1920" height="856" alt="HalalScan Pro - Google Chrome 05-10-2025 10_11_07" src="https://github.com/user-attachments/assets/af7ac2e9-5c88-4349-8030-5941f1224c4c" />](screenshot.png)
+<img width="1920" height="856" alt="HalalScan Pro - Google Chrome 05-10-2025 10_11_07" src="https://github.com/user-attachments/assets/af7ac2e9-5c88-4349-8030-5941f1224c4c" />
 
 ## What it does
 
