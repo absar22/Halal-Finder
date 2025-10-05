@@ -2,11 +2,13 @@
 
 Quick tool to check if products are halal by scanning barcodes or searching product names.
 
-![HalalScan Screenshot](screenshot.png)
+![HalalSca<img width="1920" height="856" alt="HalalScan Pro - Google Chrome 05-10-2025 10_11_07" src="https://github.com/user-attachments/assets/bb34dbb6-bb6b-49f2-9aa5-9475a5c038db" />
+n Screenshot](screenshot.png)
 
 ## What it does
 
-- Search products by barcode or name
+- Search products by barcode o![Uploading HalalScan Pro - Google Chrome 05-10-2025 10_11_07.png…]()
+r name
 - Shows if it's Halal ✅, Haram ❌, or Doubtful ⚠️
 - Lists all ingredients with flags
 - Keeps history of your searches
