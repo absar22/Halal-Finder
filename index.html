@@ -1,30 +1,87 @@
+
+</html> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Halal Ingredient Analyzer</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>HalalScan Pro</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="background-pattern"></div>
+  
   <div class="container">
-    <h1>HalalScan</h1>
-    <p>Check if a product is Halal, Haram, or Doubtful</p>
+    <div class="header">
+      <h1>🌙 HalalScan Pro</h1>
+      <p>Advanced Halal Ingredient Verification System</p>
+    </div>
 
-    <form id="product-form">
-      <input type="text" id="product-input" placeholder="Enter barcode or product name..." required />
-      <button type="submit">Check</button>
-    </form>
+    <div class="card">
+      <div class="search-container">
+        <div class="tabs">
+          <button class="tab active" data-tab="barcode">📱 Barcode</button>
+          <button class="tab" data-tab="search">🔍 Search</button>
+        </div>
 
-    <div id="result" class="hidden">
-      <h2>Product Info</h2>
-      <img id="product-image" src="" alt="Product Image" />
-      <p><strong>Name:</strong> <span id="product-name"></span></p>
-      <p><strong>Status:</strong> <span id="halal-status"></span></p>
-      <p><strong>Ingredients:</strong> <span id="ingredients"></span></p>
+        <form id="product-form">
+          <div class="input-group">
+            <input type="text" id="product-input" placeholder="Enter barcode or product name..." required />
+            <button type="submit">Check</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+        <p>Analyzing product ingredients...</p>
+      </div>
+
+      <div id="result" class="hidden">
+        <div class="product-header">
+          <img id="product-image" src="" alt="Product Image" />
+          <div class="product-info">
+            <div class="product-name" id="product-name"></div>
+            <div id="halal-status"></div>
+          </div>
+        </div>
+
+        <div class="info-section">
+          <div class="info-label">📊 Nutritional Score</div>
+          <div class="stats-grid" id="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number" id="nutriscore">-</div>
+              <div class="stat-label">Nutri-Score</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="ingredients-count">0</div>
+              <div class="stat-label">Ingredients</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-section">
+          <div class="info-label">📝 Full Ingredients List</div>
+          <div class="info-content">
+            <ul class="ingredient-list" id="ingredients-list"></ul>
+          </div>
+        </div>
+
+        <div class="info-section">
+          <div class="info-label">ℹ️ Additional Information</div>
+          <div class="info-content" id="additional-info"></div>
+        </div>
+      </div>
+
+      <div id="history-section" class="history-section hidden">
+        <div class="info-label">
+          📜 Recent Searches
+          <button class="clear-history" id="clear-history">Clear All</button>
+        </div>
+        <div id="history-list"></div>
+      </div>
     </div>
   </div>
-
   <script src="script.js"></script>
 </body>
-</html>
+ </html>
